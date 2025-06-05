@@ -53,9 +53,9 @@ export default function Home() {
         <p className="italic text-slate-400 text-sm mt-4">
            &quot;I specialize in writing clean, maintainable code using modern technologies like React, Next.js, and Tailwind CSS.&quot;
           </p>
-      <p className="italic text-slate-400 text-sm mt-4">
-        "My passion lies in turning complex problems into simple, intuitive interfaces that users love to interact with. "
-      </p>
+        <p className="italic text-slate-400 text-sm mt-4">
+          &quot;My passion lies in turning complex problems into simple, intuitive interfaces that users love to interact with.&quot;
+          </p>
             
       {/* CTA Button */}
       <a
