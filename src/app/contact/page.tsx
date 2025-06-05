@@ -22,7 +22,7 @@ export default function ContactPage() {
       } else {
         setStatus("Something went wrong. Please try again.");
       }
-    } catch (error) {
+    } catch {
       setStatus("Thank you for your message! We'll get back to you soon.");
     }
   }

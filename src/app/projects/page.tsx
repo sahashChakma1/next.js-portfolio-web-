@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function ProjectsPage() {
   const projects = [
@@ -84,10 +85,13 @@ export default function ProjectsPage() {
                 className="group rounded-xl overflow-hidden bg-zinc-800 shadow-md hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 md:flex"
               >
                 <div className="relative md:w-1/3 h-64 md:h-auto bg-zinc-700 flex items-center justify-center overflow-hidden">
-                  <img
+                  <Image
                     src={currentImage}
                     alt={project.title}
+                    width={500}
+                    height={300}
                     className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-105"
+                    unoptimized
                   />
                   {project.images.length > 1 && (
                     <>
@@ -112,45 +116,33 @@ export default function ProjectsPage() {
                   <p className="text-zinc-300 mb-4 leading-relaxed tracking-wide text-lg">
                     {project.description}
                   </p>
-                 <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-2 mt-4 px-5 py-2 rounded-lg bg-zinc-700 hover:bg-zinc-600 text-white font-medium shadow-sm ring-1 ring-zinc-600 hover:ring-zinc-500 transition-all duration-200"
-                >
-                  View Project
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4 text-white transition-transform group-hover:translate-x-1"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-blue-400 hover:underline font-medium"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </a>
-
+                    View Project →
+                  </a>
                 </div>
               </div>
             );
           })}
         </section>
 
-        <section className="mt-24">
-          <h3 className="text-3xl font-semibold text-white mb-6">🚧 Projects in Progress</h3>
-          <ul className="space-y-6">
-            {inProgress.map((item, i) => (
-              <li
-                key={i}
-                className="bg-zinc-800 rounded-xl shadow p-6 hover:shadow-lg transition duration-300"
-              >
-                <h4 className="text-xl font-bold text-white mb-2">{item.title}</h4>
-                <p className="text-zinc-400 leading-relaxed tracking-wide text-lg">{item.description}</p>
-              </li>
+        <div className="mt-24 text-white">
+          <h2 className="text-4xl font-bold mb-6">In Progress</h2>
+          <div className="space-y-8">
+            {inProgress.map((item, idx) => (
+              <div key={idx} className="bg-zinc-800 rounded-xl p-6 shadow-md">
+                <h3 className="text-2xl font-semibold mb-2">{item.title}</h3>
+                <p className="text-zinc-300 leading-relaxed tracking-wide text-lg">
+                  {item.description}
+                </p>
+              </div>
             ))}
-          </ul>
-        </section>
+          </div>
+        </div>
       </motion.main>
     </div>
   );

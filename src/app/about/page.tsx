@@ -9,8 +9,9 @@ export default function AboutPage() {
         <section className="text-center space-y-6">
           <h1 className="text-5xl font-bold">About Me</h1>
           <p className="text-xl text-teal-300 max-w-2xl mx-auto leading-relaxed tracking-wide">
-            I'm a frontend developer who enjoys building sleek, responsive, and accessible websites with modern tools and clean design systems.
-          </p>
+               I&apos;m a frontend developer who enjoys building sleek, responsive, and accessible websites with modern tools and clean design systems.
+         </p>
+
         </section>
 
         {/* Background Section */}

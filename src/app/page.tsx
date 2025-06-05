@@ -41,7 +41,7 @@ export default function Home() {
       aria-label="Introduction"
     >
       <h1 className="text-4xl sm:text-6xl font-extrabold mb-6 leading-tight">
-        Hi, I'm{' '}
+      Hi, I&apos;m{' '}
         <span className="text-emerald-400" aria-label="Sahash Chakma">
           Sahash Chakma
         </span>
@@ -50,11 +50,9 @@ export default function Home() {
      <p className="text-lg sm:text-xl max-w-xl text-slate-300 leading-relaxed">
   I’m a <strong>frontend developer</strong> dedicated to building fast, responsive, and user-friendly websites and web apps that deliver seamless digital experiences.
 </p>
-
-
-      <p className="italic text-slate-400 text-sm mt-4">
-        "I specialize in writing clean, maintainable code using modern technologies like React, Next.js, and Tailwind CSS. "
-      </p>
+        <p className="italic text-slate-400 text-sm mt-4">
+           &quot;I specialize in writing clean, maintainable code using modern technologies like React, Next.js, and Tailwind CSS.&quot;
+          </p>
       <p className="italic text-slate-400 text-sm mt-4">
         "My passion lies in turning complex problems into simple, intuitive interfaces that users love to interact with. "
       </p>
@@ -71,7 +69,7 @@ export default function Home() {
 <div className="mt-8 text-slate-300 text-sm sm:text-base text-center max-w-md">
   I also have a separate portfolio focused on my{" "}
   <span className="text-purple-400 font-medium">Game Development</span> work.
-  It's still a work in progress, but if you'd like a sneak peek, click the GLOBE icon below.
+  It&apos;s still a work in progress, but if you&apos;d like a sneak peek...
 </div>
 
 
