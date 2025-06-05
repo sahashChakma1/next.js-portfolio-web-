@@ -82,7 +82,7 @@ export default function AboutPage() {
   </p>
   <div className="border border-slate-700 rounded-xl overflow-hidden shadow-lg">
     <iframe
-      src="/pdf/resumeweb.pdf"
+      src="/pdf/SAHASH CHAKMA.pdf"
       title="My Resume"
       className="w-full h-[800px]" // Increased height here
       frameBorder="0"
