@@ -18,7 +18,7 @@ export default function AboutPage() {
           {/* Left: Image */}
           <div className="w-full md:w-1/2">
             <Image
-              src="/images/home/my_pic.jpg"
+              src="/images/home/my_pic.png"
               alt="Sahash Chakma Portrait"
               width={600}
               height={400}

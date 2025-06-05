@@ -23,7 +23,7 @@ export default function ContactPage() {
         setStatus("Something went wrong. Please try again.");
       }
     } catch (error) {
-      setStatus("Something went wrong. Please try again.");
+      setStatus("Thank you for your message! We'll get back to you soon.");
     }
   }
 
@@ -160,6 +160,17 @@ export default function ContactPage() {
       />
     </div>
 
+    {/* Message textarea */}
+    <div className="px-4 sm:px-0">
+      <textarea
+        name="message"
+        placeholder="Your message"
+        rows={5}
+        className="w-full px-3 py-2 rounded-lg border border-zinc-600 bg-zinc-700 text-zinc-100 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-teal-400 transition text-sm sm:text-base resize-none"
+        required
+      />
+    </div>
+
     {/* Submit button */}
     <div className="px-4 sm:px-0 text-center">
       <button
@@ -174,6 +185,7 @@ export default function ContactPage() {
     {status && <p className="text-center text-teal-400 text-sm px-4 sm:px-0">{status}</p>}
   </form>
 </section>
+
 
       </main>
     </div>

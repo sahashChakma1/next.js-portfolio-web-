@@ -23,12 +23,12 @@ const socialLinks = [
     ),
   },
   {
-    href: 'https://yourwebsite.com',
-    label: 'Portfolio',
-    icon: (
-      <FaGlobe className="w-6 h-6 sm:w-8 sm:h-8 text-purple-400 hover:text-purple-300 transition-transform duration-300" />
-    ),
-  },
+  href: 'https://sahash-portfolio.vercel.app',
+  label: 'Portfolio',
+  icon: (
+    <FaGlobe className="w-6 h-6 sm:w-8 sm:h-8 text-purple-400 hover:text-purple-300 transition-transform duration-300" />
+  )
+},
 ];
 
 export default function Home() {
@@ -71,8 +71,9 @@ export default function Home() {
 <div className="mt-8 text-slate-300 text-sm sm:text-base text-center max-w-md">
   I also have a separate portfolio focused on my{" "}
   <span className="text-purple-400 font-medium">Game Development</span> work.
-  If you'd like to check that out, you can click the GLOBE icon below.
+  It's still a work in progress, but if you'd like a sneak peek, click the GLOBE icon below.
 </div>
+
 
       {/* Social Icons */}
 <div className="mt-6 flex items-center gap-6">
