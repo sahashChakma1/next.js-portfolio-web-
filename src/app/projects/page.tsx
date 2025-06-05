@@ -24,7 +24,7 @@ export default function ProjectsPage() {
       title: 'Talksky Chat App (Android Studio)',
       description:
         'A feature-rich real-time chat app developed in Android Studio using Firebase. Supports secure one-on-one messaging, real-time syncing, push notifications, and a clean UI inspired by Google’s Material Design.',
-      images: ['/images/chat/Chat01.png', '/images/chat/Chat02.png'],
+      images: ['/images/chat/Chat01.png', '/images/chat/Chat02.png','/images/chat/Chat03.png','/images/chat/Chat04.png',],
       link: 'https://github.com/sahashChakma1/Talksky_Chat_App-Android-studio_project-',
     },
   ];
